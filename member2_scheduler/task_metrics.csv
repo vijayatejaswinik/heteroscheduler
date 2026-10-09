@@ -1,0 +1,5 @@
+task_id,classification,device,runtime_sec,gpu_util,memory_mb,ipc,cm_cr,llc_m_llc_l
+matrix_multiply,compute-intensive,cpu,0.7621966760000305,0.0,794.1640625,,,
+matrix_multiply,compute-intensive,cuda,0.06095972499997515,0.0,72.125,,,
+array_copy,memory-intensive,cpu,0.15118379200004028,0.0,794.1640625,,,
+array_copy,memory-intensive,cuda,0.0022543770000424956,30.0,122.56591796875,,,
