@@ -1,1 +1,3 @@
 {"timestamp": 1791554511, "server": "gpu1", "metric": "gpu_util", "value": 85, "status": "overloaded", "task_id": "unknown"}
+{"timestamp": 1791704587, "server": "gpu1", "metric": "gpu_util", "value": 85, "status": "overloaded", "task_id": "unknown"}
+{"timestamp": 1791705327, "server": "gpu1", "metric": "gpu_util", "value": 85, "status": "overloaded", "task_id": "unknown"}

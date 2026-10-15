@@ -15,8 +15,19 @@ def check_contention(server):
     return False
 
 
+def check_network_congestion(server):
+    if server.current_bandwidth_mbps < 0.3 * server.bandwidth_mbps:
+        server.network_congested = True
+        return True
+    server.network_congested = False
+    return False
+
+
 def log_contention(server, task_id, log_file="contention_log.json"):
-    if server.type == "GPU":
+    if server.network_congested:
+        metric = "network_bandwidth"
+        value = server.current_bandwidth_mbps
+    elif server.type == "GPU":
         if server.gpu_util > 80:
             metric, value = "gpu_util", server.gpu_util
         else:
