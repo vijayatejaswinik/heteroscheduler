@@ -1,0 +1,7 @@
+task_id,classification,device,runtime_sec,gpu_util,memory_mb,ipc,cm_cr,llc_m_llc_l,network_mbps,source
+matrix_multiply,compute-intensive,gpu,0.060517,0.0,72.125,0.93,0.06,0.3,0.0,real_runtime_paper_spejbb_proxy
+matrix_multiply,compute-intensive,cpu,0.72237,0.0,780.531,0.93,0.06,0.3,0.0,real_runtime_paper_spejbb_proxy
+array_copy,memory-intensive,cpu,0.077503,0.0,780.539,0.68,0.2,1.14,0.0,real_runtime_paper_blackscholes_proxy
+array_copy,memory-intensive,gpu,0.001795,30.0,122.566,0.68,0.2,1.14,0.0,real_runtime_paper_blackscholes_proxy
+file_transfer,network-intensive,cpu,0.282295,0.0,50.0,0.55,0.15,0.35,286.027,real_runtime_real_network
+api_stream,network-intensive,cpu,3.340325,0.0,20.0,0.55,0.15,0.35,0.425,real_runtime_measured_below_threshold
